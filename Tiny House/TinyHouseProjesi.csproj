@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F621C2C5-5E02-4E7C-A148-BC3DCCFEC6D1}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>TinyHouseProjesi</RootNamespace>
+    <AssemblyName>TinyHouseProjesi</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BouncyCastle.Crypto, Version=1.9.0.0, Culture=neutral, PublicKeyToken=0e99375e54769942, processorArchitecture=MSIL">
+      <HintPath>..\packages\Portable.BouncyCastle.1.9.0\lib\net40\BouncyCastle.Crypto.dll</HintPath>
+    </Reference>
+    <Reference Include="BouncyCastle.Cryptography, Version=2.0.0.0, Culture=neutral, PublicKeyToken=072edcf4a5328938, processorArchitecture=MSIL">
+      <HintPath>..\packages\BouncyCastle.Cryptography.2.4.0\lib\net461\BouncyCastle.Cryptography.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp, Version=5.5.13.4, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>..\packages\iTextSharp.5.5.13.4\lib\net461\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AdminAnaSayfa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminAnaSayfa.Designer.cs">
+      <DependentUpon>AdminAnaSayfa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminGiris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminGiris.Designer.cs">
+      <DependentUpon>AdminGiris.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminIlanGuncelle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminIlanGuncelle.Designer.cs">
+      <DependentUpon>AdminIlanGuncelle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminIlanYonetimi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminIlanYonetimi.Designer.cs">
+      <DependentUpon>AdminIlanYonetimi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminIstatistikRapor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminIstatistikRapor.Designer.cs">
+      <DependentUpon>AdminIstatistikRapor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminKullaniciGuncelle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminKullaniciGuncelle.Designer.cs">
+      <DependentUpon>AdminKullaniciGuncelle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminKullaniciYonetimi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminKullaniciYonetimi.Designer.cs">
+      <DependentUpon>AdminKullaniciYonetimi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminOdemeYonetimi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminOdemeYonetimi.Designer.cs">
+      <DependentUpon>AdminOdemeYonetimi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminRezervasyonDetay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminRezervasyonDetay.Designer.cs">
+      <DependentUpon>AdminRezervasyonDetay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminRezervasyonYonetimi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminRezervasyonYonetimi.Designer.cs">
+      <DependentUpon>AdminRezervasyonYonetimi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminYeniIlanEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminYeniIlanEkle.Designer.cs">
+      <DependentUpon>AdminYeniIlanEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminYeniKullaniciEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminYeniKullaniciEkle.Designer.cs">
+      <DependentUpon>AdminYeniKullaniciEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EvSahibiAnaSayfa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EvSahibiAnaSayfa.Designer.cs">
+      <DependentUpon>EvSahibiAnaSayfa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EvSahibiGiris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EvSahibiGiris.Designer.cs">
+      <DependentUpon>EvSahibiGiris.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EvSahibiIlanYonetimi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EvSahibiIlanYonetimi.Designer.cs">
+      <DependentUpon>EvSahibiIlanYonetimi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EvSahibiOdemeBilgileri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EvSahibiOdemeBilgileri.Designer.cs">
+      <DependentUpon>EvSahibiOdemeBilgileri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EvSahibiRezYonetimi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EvSahibiRezYonetimi.Designer.cs">
+      <DependentUpon>EvSahibiRezYonetimi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EvSahibiYorumVePuan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EvSahibiYorumVePuan.Designer.cs">
+      <DependentUpon>EvSahibiYorumVePuan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GirisTuruSecme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GirisTuruSecme.Designer.cs">
+      <DependentUpon>GirisTuruSecme.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KayitOl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KayitOl.Designer.cs">
+      <DependentUpon>KayitOl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KiraciAnaSayfa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KiraciAnaSayfa.Designer.cs">
+      <DependentUpon>KiraciAnaSayfa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KiraciEvDetay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KiraciEvDetay.Designer.cs">
+      <DependentUpon>KiraciEvDetay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KiraciGiris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KiraciGiris.Designer.cs">
+      <DependentUpon>KiraciGiris.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KiraciOdeme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KiraciOdeme.Designer.cs">
+      <DependentUpon>KiraciOdeme.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KiraciRezervasyonlari.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KiraciRezervasyonlari.Designer.cs">
+      <DependentUpon>KiraciRezervasyonlari.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KiraciYorumVePuan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KiraciYorumVePuan.Designer.cs">
+      <DependentUpon>KiraciYorumVePuan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SifremiUnuttum.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SifremiUnuttum.Designer.cs">
+      <DependentUpon>SifremiUnuttum.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VeriTabaniYardimci.cs" />
+    <EmbeddedResource Include="AdminAnaSayfa.resx">
+      <DependentUpon>AdminAnaSayfa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminGiris.resx">
+      <DependentUpon>AdminGiris.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminIlanYonetimi.resx">
+      <DependentUpon>AdminIlanYonetimi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminKullaniciYonetimi.resx">
+      <DependentUpon>AdminKullaniciYonetimi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminRezervasyonYonetimi.resx">
+      <DependentUpon>AdminRezervasyonYonetimi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EvSahibiAnaSayfa.resx">
+      <DependentUpon>EvSahibiAnaSayfa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EvSahibiGiris.resx">
+      <DependentUpon>EvSahibiGiris.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GirisTuruSecme.resx">
+      <DependentUpon>GirisTuruSecme.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KayitOl.resx">
+      <DependentUpon>KayitOl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KiraciAnaSayfa.resx">
+      <DependentUpon>KiraciAnaSayfa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KiraciEvDetay.resx">
+      <DependentUpon>KiraciEvDetay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KiraciGiris.resx">
+      <DependentUpon>KiraciGiris.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KiraciYorumVePuan.resx">
+      <DependentUpon>KiraciYorumVePuan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="SifremiUnuttum.resx">
+      <DependentUpon>SifremiUnuttum.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
